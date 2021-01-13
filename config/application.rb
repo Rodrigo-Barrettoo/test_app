@@ -18,6 +18,10 @@ Bundler.require(*Rails.groups)
 
 module TestApp
   class Application < Rails::Application
+
+    # TimeZone
+    config.time_zone = "America/Sao_Paulo"
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 

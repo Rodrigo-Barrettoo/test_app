@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://jsonplaceholder.typicode.com/posts/2
+    uri: "<API-URL>/posts/2"
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 12 Jan 2021 17:51:19 GMT
+      - Wed, 13 Jan 2021 12:34:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d24b8b8047532bbf6c8c60324c6bdc6b91610473879; expires=Thu, 11-Feb-21
-        17:51:19 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+      - __cfduid=d16371990e77242d2a28abf482b9308131610541292; expires=Fri, 12-Feb-21
+        12:34:52 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
       X-Powered-By:
       - Express
       X-Ratelimit-Limit:
@@ -36,7 +36,7 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '999'
       X-Ratelimit-Reset:
-      - '1610375358'
+      - '1609421436'
       Vary:
       - Origin, Accept-Encoding
       Access-Control-Allow-Credentials:
@@ -56,19 +56,19 @@ http_interactions:
       Cf-Cache-Status:
       - HIT
       Age:
-      - '22095'
+      - '785'
       Cf-Request-Id:
-      - '0799524f560000f7c6098c2000000001'
+      - '079d56f1f10000f203141be000000001'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LAaP5hxGpM%2F3ClAeaabU5QS7FZ91RqJceJi0kbZfZ6lXNCPCFWcROrrBhVcShKNq0x55ibEWSi60zKWfLJfcwTsb3WgCtuNer6N9hlaMQErJpeFW8KaEqeGwQumq"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RYTRfVkdtqHLd7FWhZnsQo%2FfX8%2B3tVZe0CdocLugnd9ASMazx%2F1wgFVm%2Bj0Vk9dnFCrjZiwLIF%2FT6Dfa2nV7N2CH0sGMlO3ugsnDz%2FrUYT2Y5XAQin4lNt3GJKN3"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 6108b9922fe6f7c6-EZE
+      - 610f27631d01f203-GRU
     body:
       encoding: ASCII-8BIT
       string: |-
@@ -78,5 +78,5 @@ http_interactions:
           "title": "qui est esse",
           "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
         }
-  recorded_at: Tue, 12 Jan 2021 17:51:19 GMT
+  recorded_at: Wed, 13 Jan 2021 12:34:52 GMT
 recorded_with: VCR 6.0.0

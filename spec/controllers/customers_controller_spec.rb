@@ -27,7 +27,7 @@ RSpec.describe CustomersController, type: :controller do
       @customer = create(:customer)
     end
 
-    it 'Content-Type' do
+    it 'Content-Type JSON' do
       customer_params = attributes_for(:customer)
       sign_in @member
 

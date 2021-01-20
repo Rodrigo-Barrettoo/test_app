@@ -17,14 +17,13 @@ RSpec.describe "Customers", type: :request do
       ])
     end
 
-    it "show - JSON" do
+    it "show - Rspec puro + JSON" do
       get '/customers/1.json'
-      expect(response).to have_http_status(200)
-      expect(response.body).to include_json(
-        id: /\d/,
-        name: (be_kind_of String),
-        email: (be_kind_of String)
-      )
+      response_body = JSON.parse(response.body)
+
+      expect(response_body.fetch('id')).to eq(1)
+      expect(response_body.fetch('name')).to be_kind_of(String)
+      expect(response_body.fetch('email')).to be_kind_of(String)
     end
 
     it "post - JSON" do
